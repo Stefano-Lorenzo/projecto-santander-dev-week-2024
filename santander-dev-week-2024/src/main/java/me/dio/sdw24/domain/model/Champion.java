@@ -15,11 +15,21 @@ porquê da utilização do record: apesar de ser uma classe de DTO
 * que se persista um record na base de dados
 
  */
-public record Champions(
+public record Champion(
         Long id,
         String name,
         String role,
         String personality,
         String imageUrl
 ) {
+
+    // método que prepara os dados que serão requisitados via endpoint e os retorna ao utilizador final
+    public String generateContextByQuestion(String question) {
+        return """
+                Questão: %s
+                Nome do Campeão: %s
+                Função ou Papel: %s
+                Histórico ou Personalidade do Campeão: %s
+                """.formatted(question, this.name, this.role, this.personality);
+    }
 }

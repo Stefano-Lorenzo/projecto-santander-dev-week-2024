@@ -77,6 +77,12 @@ Concluído... | Finished... | Finalizado... ✅
 - **IDE**
   >
   >> **[IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download)**
+  >
+  >> **[Visual Studio Code (VS Code)](https://code.visualstudio.com/download)**
+  >
+  >> **[Eclipse](https://www.eclipse.org/downloads/)**
+  >
+  >> Outros | Other | Otros
 
 - **Outras Tecnologias | Other Technologies | Otras tecnologías**
   >
@@ -153,23 +159,23 @@ Concluído... | Finished... | Finalizado... ✅
 
 >> De acordo com o exposto na Arquitectura de Projecto, a estrutura de pastas deste projecto sugere uma _Clean Architecture_ simplificada, visando a uma clara separação das responsabilidades e promovendo a autonomia das camadas em um projecto **_Spring Boot_**. Esta abordagem estrutural não só facilita a manutenção e a evolução do código, mas também sustenta a integração e a colaboração eficaz entre as diferentes partes da aplicação. Abaixo, a demonstração detalhada da disposição das pastas que compõem a aplicação, cada uma desempenhando um papel específico dentro do ecossistema de _software_:
 
-    - **adapters/:** inclui os adaptadores que facilitam a comunicação entre a aplicação e o mundo externo (sendo a única pasta que "conhece" o Spring);
+>> - **adapters/:** inclui os adaptadores que facilitam a comunicação entre a aplicação e o mundo externo (sendo a única pasta que "conhece" o Spring);
 
-    - **in/:** abriga os adaptadores de entrada, tais como controladores REST, que lidam com as requisições dos utilizadores finais;
+>> - **in/:** abriga os adaptadores de entrada, tais como controladores REST, que lidam com as requisições dos utilizadores finais;
 
-    - **out/:** contém os adaptadores de saída, responsáveis pela interacção com bases de dados e APIs externas;
+>> - **out/:** contém os adaptadores de saída, responsáveis pela interacção com bases de dados e APIs externas;
 
-    - **application/:** hospeda os casos de uso da aplicação, encapsulando a lógica de negócios essencial;
+>> - **application/:** hospeda os casos de uso da aplicação, encapsulando a lógica de negócios essencial;
 
-    - **domain/:** representa o coração da aplicação, englobando entidades, excepções e interfaces (portas) que articulam as regras de negócio fundamentais;
+>> - **domain/:** representa o coração da aplicação, englobando entidades, excepções e interfaces (portas) que articulam as regras de negócio fundamentais;
 
-    - **exception/:** define as excepções personalizadas pertinentes ao domínio;
+>> - **exception/:** define as excepções personalizadas pertinentes ao domínio;
 
-    - **model/:** modela as entidades do domínio, reflectindo os conceitos centrais da aplicação;
+>> - **model/:** modela as entidades do domínio, reflectindo os conceitos centrais da aplicação;
 
-    - **ports/:** estabelece as interfaces que delineam os contratos para os adaptadores e serviços externos;
+>> - **ports/:** estabelece as interfaces que delineam os contratos para os adaptadores e serviços externos;
 
-    - **Application.java**: a classe principal que orquestra a configuração e a execução da aplicação.
+>> - **Application.java**: a classe principal que orquestra a configuração e a execução da aplicação.
 
 **PT-AO** 👈
 
@@ -177,23 +183,23 @@ Concluído... | Finished... | Finalizado... ✅
 
 >> In accordance with what was explained in the Project Architecture, the folder structure of this project suggests a simplified Clean Architecture, aiming for a clear separation of responsibilities and promoting the autonomy of the layers in a **Spring Boot** project. This structural approach not only facilitates code maintenance and evolution, but also supports integration and effective collaboration between the different parts of the application. Below is a detailed demonstration of the layout of the folders that make up the application, each one playing a specific role within the software ecosystem:
 
-    - **adapters/:** includes the adapters that facilitate communication between the application and the outside world (being the only folder that "knows" Spring);
+>> - **adapters/:** includes the adapters that facilitate communication between the application and the outside world (being the only folder that "knows" Spring);
 
-    - **in/:** hosts the input adapters, such as REST controllers, which handle end-user requests;
+>> - **in/:** hosts the input adapters, such as REST controllers, which handle end-user requests;
 
-    - **out/:** contains output adapters, responsible for interacting with databases and external APIs;
+>> - **out/:** contains output adapters, responsible for interacting with databases and external APIs;
 
-    - **application/:** hosts the application's use cases, encapsulating the essential business logic;
+>> - **application/:** hosts the application's use cases, encapsulating the essential business logic;
 
-    - **domain/:** represents the core of the application, comprising entities, exceptions and interfaces (ports) that articulate the fundamental business rules;
+>> - **domain/:** represents the core of the application, comprising entities, exceptions and interfaces (ports) that articulate the fundamental business rules;
 
-    - **exception/:** defines the custom exceptions relevant to the domain;
+>> - **exception/:** defines the custom exceptions relevant to the domain;
 
-    - **model/:** models domain entities, reflecting the core concepts of the application;
+>> - **model/:** models domain entities, reflecting the core concepts of the application;
 
-    - **ports/:** establishes the interfaces that outline the contracts for adapters and external services;
+>> - **ports/:** establishes the interfaces that outline the contracts for adapters and external services;
 
-    - **Application.java**: the main class that orchestrates the configuration and execution of the application.
+>> - **Application.java**: the main class that orchestrates the configuration and execution of the application.
 
 **EN-US** 👈
 
@@ -201,23 +207,23 @@ Concluído... | Finished... | Finalizado... ✅
 
 >> De acuerdo con lo explicado en la Arquitectura del Proyecto, la estructura de carpetas de este proyecto sugiere una _Clean Architecture_ simplificada, buscando una clara separación de responsabilidades y promoviendo la autonomía de las capas en un proyecto **_Spring Boot_**. Este enfoque estructural no sólo facilita el mantenimiento y la evolución del código, sino que también respalda la integración y colaboración efectiva entre diferentes partes de la aplicación. se muestra una demostración detallada de la disposición de las carpetas que componen la aplicación, cada una de las cuales desempeña un papel específico dentro del ecosistema _software_:
 
-    - **adapters/:** incluye los adaptadores que facilitan la comunicación entre la aplicación y el mundo exterior (siendo la única carpeta que "conoce" Spring);
+>> - **adapters/:** incluye los adaptadores que facilitan la comunicación entre la aplicación y el mundo exterior (siendo la única carpeta que "conoce" Spring);
 
-    - **in/:** alberga los adaptadores de entrada, como los controladores REST, que manejan las solicitudes de los usuarios finales;
+>> - **in/:** alberga los adaptadores de entrada, como los controladores REST, que manejan las solicitudes de los usuarios finales;
 
-    - **out/:** contiene los adaptadores de salida, responsables de interactuar con bases de datos y API externas;
+>> - **out/:** contiene los adaptadores de salida, responsables de interactuar con bases de datos y API externas;
 
-    - **application/:** alberga los casos de uso de la aplicación, encapsulando la lógica de negocio esencial;
+>> - **application/:** alberga los casos de uso de la aplicación, encapsulando la lógica de negocio esencial;
 
-    - **domain/:** representa el núcleo de la aplicación, compuesto por entidades, excepciones e interfaces (puertos) que articulan las reglas de negocio fundamentales;
+>> - **domain/:** representa el núcleo de la aplicación, compuesto por entidades, excepciones e interfaces (puertos) que articulan las reglas de negocio fundamentales;
 
-    - **exception/:** define las excepciones personalizadas pertinentes para el dominio;
+>> - **exception/:** define las excepciones personalizadas pertinentes para el dominio;
 
-    - **model/:** modela las entidades del dominio, reflejando los conceptos centrales de la aplicación;
+>> - **model/:** modela las entidades del dominio, reflejando los conceptos centrales de la aplicación;
 
-    - **ports/:** establece las interfaces que perfilan los contratos para adaptadores y servicios externos;
+>> - **ports/:** establece las interfaces que perfilan los contratos para adaptadores y servicios externos;
 
-    - **Application.java**: la clase principal que organiza la configuración y ejecución de la aplicación.
+>> - **Application.java**: la clase principal que organiza la configuración y ejecución de la aplicación.
 
 **ES-ES** 👈
 
@@ -225,16 +231,90 @@ Concluído... | Finished... | Finalizado... ✅
 
 👉 **PT-AO**
 
-- configurar o ambiente inicial do projecto. Definir a linguagem, o gestor de pacotes ou dependências e as dependências a serem utilizadas e também as versões do Java e do **_Spring Boot_** e os dados do projecto. Para configurar o _Spring Boot_, pode ser utilizado o _website_ "***[Spring Initializr](https://start.spring.io/)***";
+- Configurar o ambiente inicial do projecto. Definir a linguagem, o gestor de pacotes ou dependências e as dependências a serem utilizadas e também as versões do Java e do **_Spring Boot_** e os dados do projecto. Para criar o projecto no _Spring Boot_, pode ser utilizado o _website_ "***[Spring Initializr](https://start.spring.io/)***";
 
 - Baixar o arquivo previamente configurado e exportado do _website_ "_[Spring Initializr](https://start.spring.io/)_";
 
-- Abrir o projecto na IDE _[IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download)_;
+- Abrir o projecto na IDE _[IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download)_ ou outra ao critério do desenvolvedor;
 
 - Configurar a versão do [JDK](https://www.oracle.com/br/java/technologies/downloads/#java21) na IDE;
 
 - Na pasta "***resources/***", configurar o ficheiro "**application.properties**" ou então também poderá criar um ficheiro "**application.yml**". A configuração a ser efectuada compreenderá as definições de inicialização da base de dados e das restantes dependências do projecto;
 
-- Para a criação de tabelas na base de dados, deve-se criar uma classe "**.sql**", na pasta "***resources/***", para que a aplicação possa efectuar a renderização na base de dados em memória;
+- Para a criação de tabelas na base de dados, deve-se criar um ficheiro "**.sql**", na pasta "***resources/***", para que a aplicação possa efectuar a renderização na base de dados em memória;
 
 - Criar a conexão à base de dados e depois converter e expor os dados para serem pesquisados no ***frontend***;
+
+- Criar o "***Controller***" e implementar a API REST do projecto;
+
+- Mapear os "***endpoints***" da API;
+
+- Para documentar a API, utiliza-se uma dependência do ***SpringBoot***, que é a "***[OpenAPI Library for SpringBoot](https://springdoc.org/)***". Esta dependência implementa a **interface** do "***[Swagger UI](https://swagger.io/tools/swagger-ui/)***" para que se possa visualizar melhor os _endpoints_ criados e a documentação efectuada. Para visualizar no navegador, é só utilizar o seguinte caminho: **localhost:port/swagger-ui/index.html**;
+
+- Criar a classe para dar tratamento às questões (conversa) que serão efectuadas pelo utilizador final aos campeões do "_League of Legends_";
+
+- Criar uma classe para o tratamento geral das várias excepções que possam acontecer;
+
+-
+
+**PT-AO** 👈
+
+👉 **EN-US**
+
+- Setting up the project's initial environment. Define the language, the package or dependency manager and the dependencies to be used, as well as the versions of Java and **Spring Boot** and the project data. To create the project in Spring Boot, the website "**[Spring Initializr](https://start.spring.io/)** can be used";
+
+- Download the previously configured and exported file from the website "[Spring Initializr](https://start.spring.io/)";
+
+- Open the project in the IDE [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download) or another at the developer's discretion;
+
+- Configure the version of [JDK](https://www.oracle.com/br/java/technologies/downloads/#java21) in the IDE;
+
+- In the "**resources/**" folder, configure the "**application.properties**" file or you can also create a "**application.yml**" file. The configuration to be carried out will include the database initialization settings and the remaining project dependencies;
+
+- To create tables in the database, a "**.sql**" file must be created in the "**resources/**" folder so that the application can render the database in memory;
+
+- Create the connection to the database and then convert and expose the data to be searched in **frontend**;
+
+- Create the "**Controller**" and implement the project's REST API;
+
+- Mapping the API's "***endpoints***";
+
+- To document the API, a dependency of **SpringBoot** is used, which is the "**[OpenAPI Library for SpringBoot](https://springdoc.org/)**". This dependency implements the **interface** of the "**[Swagger UI](https://swagger.io/tools/swagger-ui/)**" so that it can be better visualized the endpoints created and the documentation carried out. To view it in the browser, just use the following path: **localhost:port/swagger-ui/index.html**;
+
+- Create the class to handle the questions (conversations) that the end user will ask to the "League of Legends" champions;
+
+- Create a class for general handling of the various exceptions that may occur;
+
+-
+
+**EN-US** 👈
+
+👉 **ES-ES**
+
+- Configurar el entorno inicial del proyecto. Definir el lenguaje, el gestor de paquetes o dependencias y las dependencias a utilizar, así como las versiones de Java y **_Spring Boot_** y los datos del proyecto. Para crear el proyecto en _Spring Boot_, se puede utilizar la _website_ "***[Spring Initializr](https://start.spring.io/)***";
+
+- Descargue el archivo previamente configurado y exportado de la _website_ "_[Spring Initializr](https://start.spring.io/)_";
+
+- Abrir el proyecto en el IDE _[IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download)_ u otro a discreción del desarrollador;
+
+- Configurar la versión de [JDK](https://www.oracle.com/br/java/technologies/downloads/#java21) en el IDE;
+
+- En la carpeta "***resources/***", configure el archivo "**application.properties**" o también se puede crear un archivo "**application.yml**". La configuración a realizar incluirá los ajustes de inicialización de la base de datos y del resto de dependencias del proyecto;
+
+- Para crear tablas en la base de datos, se debe crear una clase "**.sql**" en la carpeta "***resources/***" para que la aplicación pueda renderizar la base de datos en memoria;
+
+- Crear la conexión a la base de datos y, a continuación, convertir y exponer los datos que se buscarán en ***frontend***;
+
+- Crear el "***Controller***" e implementar la API REST del proyecto;
+
+- Mapear los "***endpoints***" de la API;
+
+- Para documentar la API se utiliza una dependencia de ***SpringBoot***, que es la "***[OpenAPI Library for SpringBoot](https://springdoc.org/)***". Esta dependencia implementa la **interfaz** de la "***[Swagger UI](https://swagger.io/tools/swagger-ui/)***" para que se pueda visualizar mejor los _endpoints_ creados y la documentación realizada. Para visualizarla en el navegador, basta con utilizar la siguiente ruta: **localhost:port/swagger-ui/index.html**
+
+- Crear una clase para tratar las preguntas (conversaciones) que el usuario final hará a los campeones de "_League of Legends_";
+
+- Crear una clase para el manejo general de las diversas excepciones que pueden ocurrir;
+
+-
+
+**ES-ES** 👈
